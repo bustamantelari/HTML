@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Carrapet</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Karla&family=Stoke&display=swap" rel="stylesheet">
+
+<style>
+body {
+    background-color: #60A040;
+    color: #F0E090;
+    font-size: 16px;
+    font-family: "Karla", Verdana, Ubuntu;
+    margin: 0;
+}
+
+header {
+    margin-bottom: 1px;
+    padding: 10px 10%;
+    overflow: hidden;
+}
+
+nav {
+    width: 20%;
+    float: left;
+}
+
+section {
+    width: 70%;
+    float: left;
+    margin-left: 2%;
+    font-size: 10px;
+}
+
+.imgLogo {
+    float: left;
+    width: 350px;
+    border-bottom: 4px solid #F0E090;
+    margin-bottom: 6px;
+    padding-bottom: 15px;
+}
+
+.ender {
+    float: right;
+    text-align: right;
+    line-height: 1.4;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: #F0E0A0;
+}
+
+a:visited {
+    color: #F0E080;
+}
+
+input[type="radio"] {
+    accent-color: #C00000;
+}
+
+.divCompras {
+    width: 540px;
+    color: #2255AA;
+    background-color: #FFFFBB;
+    padding: 6px 6px 15px 6px;
+    margin: 20px auto;
+    border: 2px solid #000000;
+    font-size: 12px;
+}
+
+.divCompras fieldset {
+    border: 1px solid #000000;
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+.fsEsq {
+    float: left;
+    display: inline;
+    margin: 0px;
+}
+.fsDir {
+    float: right;
+    display: inline;
+    margin: 0px;
+}
+
+.divLinha {
+    width: 500px;
+    margin-bottom: 6px;
+    clear: both;
+}
+
+.colPri {
+    float: left;
+    display: block;
+    width: 90px;
+}
+
+.colPriCompras {
+    float: left;
+    display: block;
+    width: 86px;
+}
+
+.colPriPag {
+    float: left;
+    display: block;
+    width: 250px;
+}
+
+.inpGrande { width: 380px; }
+.impEnder { width: 180px; height: 50px; }
+.impTelef { width: 90px; }
+.numDD { width: 30px; }
+.numQD { width: 50px; }
+.impMedio { width: 80px; }
+.impNCC { width: 130px; }
+
+.listaCompras {
+    width: 210px;
+    height: 160px;
+    float: right;
+    margin-left: 10px;
+    margin-top: 2px;
+}
+
+.colSelProd {
+    width: 160px;
+    float: left;
+}
+
+.botoes {
+    text-align: right;
+    margin: 20px 10px 0px 10px;
+}
+
+/* Nascimento */
+.nascimentoContainer {
+    float: right; 
+    width: 180px; 
+    margin-top: 2px; 
+    clear: right;
+}
+
+/* Select + botão */
+.selectContainer {
+    float: left;
+    width: 220px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.selectContainer select {
+    float: left;
+    width: 160px;
+}
+
+.selectContainer button {
+    float: left;
+    margin-left: 2px;
+    margin-top: 0px;
+    height: 24px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<img src="CarrapetLogoTopo.png" class="imgLogo">
+<address class="ender">
+Largo do Frajola, 23<br>
+Tel: (21) 94123-1234<br>
+<a href="mailto:contato@carrapet.com.br">contato@carrapet.com.br</a>
+</address>
+</header>
+
+<nav>
+<ul>
+<li><a href="#">Apresentação</a></li>
+<li><a href="#">Cuidados</a></li>
+<li><a href="#">Produtos</a></li>
+<li><a href="#">Pedidos</a></li>
+</ul>
+</nav>
+
+<section>
+<div class="divCompras">
+<h2>Compras</h2>
+
+<form>
+
+
+<fieldset>
+<legend>Identificação</legend>
+
+<div class="divLinha">
+<label class="colPri">Nome:</label>
+<input type="text" class="inpGrande" name="nome">
+</div>
+
+<div class="divLinha">
+<label class="colPri">E-mail:</label>
+<input type="text" class="inpGrande" name="email">
+</div>
+
+<div class="divLinha">
+<label class="colPri">Endereço:</label>
+<textarea class="impEnder" name="endereco"></textarea>
+
+<fieldset class="fsDir">
+<legend>Gênero</legend>
+<input type="radio" name="genero"> Mas
+<input type="radio" name="genero"> Fem
+<input type="radio" name="genero"> Outro
+</fieldset>
+
+
+<fieldset class="fsDir nascimentoContainer">
+<legend>Nascimento</legend>
+<input type="number" class="numDD" name="dia">
+<input type="number" class="numDD" name="mes">
+<input type="number" class="numQD" name="ano">
+</fieldset>
+
+
+<div style="float: left; width: 300px;">
+<div class="divLinha">
+<label class="colPri">Telefone:</label>
+<input type="text" class="impTelef" name="telefone">
+</div>
+<div class="divLinha">
+<label class="colPri">Celular:</label>
+<input type="text" class="impTelef" name="celular">
+</div>
+</div>
+
+<div style="clear:both;"></div>
+</fieldset>
+
+
+<fieldset style="overflow: hidden;">
+<legend>Seleção de Produtos e Pagamento</legend>
+
+<div class="selectContainer">
+<label class="colPriCompras">Produto:</label>
+<select class="colSelProd" name="produto">
+<option>----</option>
+<optgroup label="Ração Cão">
+<option>PEDIGREE Carne 10kg</option>
+<option>Purina Alpo C&amp;F 10kg</option>
+</optgroup>
+<optgroup label="Ração Gato">
+<option>Gran Plus Choice C&amp;F 10kg</option>
+</optgroup>
+<optgroup label="Brinquedo Cão">
+<option>JAMBO Osso Silicone</option>
+</optgroup>
+</select>
+<button type="button">+</button>
+</div>
+
+<textarea class="listaCompras" readonly></textarea>
+
+<fieldset class="fsEsq" style="margin-top:10px;">
+<legend>Cartão</legend>
+Bandeira:<br>
+<input type="radio" name="bandeira"> Visa
+<input type="radio" name="bandeira"> Master
+<input type="radio" name="bandeira"> Elo
+<br><br>
+Validade:<br>
+<input type="number" class="numDD" name="valDia"> /
+<input type="number" class="numQD" name="valAno">
+<br><br>
+Número:<br>
+<input type="text" class="impNCC" name="numCartao">
+</fieldset>
+
+<div style="text-align:right; clear:both; margin-top:10px;">
+Valor R$ <input type="text" class="impMedio" readonly>
+</div>
+
+</fieldset>
+
+<div class="botoes">
+<button type="submit">Confirmar</button>
+<button type="reset">Limpar</button>
+</div>
+
+</form>
+</div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<title>Carrapet</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Karla&family=Stoke&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+    background-color: #60A040;
+    color: #F0E090;
+    font-size: 16px;
+    font-family: "Karla", Verdana, Ubuntu;
+    margin: 0;
+}
+
+
+
+header {
+    display: block;
+    margin-bottom: 1px;
+    padding: 10px 10%;
+    overflow: hidden;
+}
+
+nav {
+    display: block;
+    width: 20%;
+    float: left;
+}
+
+section {
+    display: block;
+    width: 70%;
+font-size: 10px;
+}
+
+
+
+.imgLogo {
+    float: left;
+    width: 350px;
+    height: auto;
+    border-bottom: 4px solid #F0E090;
+    margin-bottom: 6px;
+    padding-bottom: 15px;
+}
+
+
+.ender {
+    float: right;
+    text-align: right;
+    line-height: 1.4;
+    font-size: 14px;
+    font-family: "Karla", Verdana, Ubuntu;
+}
+
+
+
+.titulo {
+    text-align: center;
+}
+
+.listaCuida {
+    width: 380px;
+    color: #3366BB;
+    background-color: #FFFFBB;
+    padding: 10px;
+    border: 2px solid #000000;
+    margin: 10px auto;
+    text-align: left;
+}
+
+.listaCuida ul {
+    list-style-type: square;
+}
+
+.listaCuida ol {
+    list-style-type: lower-alpha;
+}
+
+.preco {
+    color: #C00000;
+
+}
+
+/* Links */
+
+a {
+    text-decoration: none;
+    color: #F0E0A0;
+}
+
+a:visited {
+    color: #F0E080;
+}
+
+
+.apres {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Stoke", "Lucida Bright", Liberation;
+    font-size: 16px;
+    text-align: center;
+    gap: 10px;
+}
+
+.tabProd {
+    border: 1px solid #000000;
+    border-collapse: collapse;
+    margin-top: 6px;
+    font-size: 15px;
+    background-color: #FFFFFF;
+    color: #114499;
+    font-family: Karla, Verdana, Ubuntu;
+}
+
+.tabProd th,
+.tabProd td {
+    border: 2px solid #000000;
+    padding: 6px 12px 6px 12px;
+}
+
+.linTH {
+    color: #FFFFFF;
+    background-color: #0077BB;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.colTH {
+    color: #FFFFFF;
+    background-color: #22AAEE;
+    text-align: left;
+}
+
+
+.imgPet {
+    width: 40px;
+    height: 40px;
+}
+
+.imgQueijo {
+    width: 90px;
+    height: 90px;
+}
+
+.preco {
+    color:#C00000;
+}
+
+</style>
+ </head>
+ <body>
+
+
+
+<header>
+    <img src="CarrapetLogoTopo.png" class="imgLogo">
+
+    <address class="ender">
+        Largo do Frajola, 23<br>
+        Tel: (21) 94123-1234<br>
+        <a href="mailto:contato@carrapet.com.br">
+            contato@carrapet.com.br
+        </a>
+    </address>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="Carrapet.html" target="_blank">Apresentação</a></li>
+        <li><a href="Cuidados.html" target="_blank">Cuidados</a></li>
+        <li><a href="Produtos.html" target="_blank">Produtos</a></li>
+        <li><a href="Pedidos.html" target="_blank">Pedidos</a></li>
+    </ul>
+</nav>
+
+
+<section><table class="tabProd">
+
+<tr class="linTH">
+    <th colspan="5">Produtos Pet</th>
+</tr>
+
+<tr class="linTH">
+    <th>Tipo</th>
+    <th>Pet</th>
+    <th>Descrição</th>
+    <th>Imagem</th>
+    <th>Preço</th>
+</tr>
+  
+    <tr>
+    <td rowspan="3" class="colTH">Ração</td>
+    <td><img src="Cao40.png" class="imgPet"></td>
+    <td>PEDIGREE<br>
+Carne<br>
+10Kg</td>
+    <td><img src="RaçãoPedigree90.jpg" class="imgQueijo"></td>
+    <td class="preco">R$ 100,00</td>
+  </tr>
+  <tr>
+   <td><img src="Cao40.png" class="imgPet"></td>
+    <td>Purina Alpo<br>
+Carne e Frango<br>
+10Kg<br></td>
+    <td><img src="RaçãoAipo90.jpg" class="imgQueijo"></td>
+    <td class="preco">R$ 130,00</td>
+  </tr>
+  <tr>
+    <td><img src="Gato40.png" class="imgPet"></td>
+    <td>GranPlus Choice<br>
+Frango e carne<br>
+10Kg</br></td>
+    <td><img src="RaçãoGranPlus90.jpg" class="imgQueijo"></td>
+    <td class="preco">R$ 130,00</td>
+  </tr>
+  <tr>
+    <td rowspan="3" class="colTH">Brinquedo</td>
+    <td><img src="Cao40.png" class="imgPet"></td>
+    <td>JAMBO PET<br>
+Osso silicone</br>
+sabor Frango<br></td>
+    <td><img src="BrinquedoJambo90.jpg" class="imgQueijo"></td>
+    <td class="preco">R$ 25,00</td>
+  </tr>
+</table>
+</section>
+
+
+ 
+ </body>
+</html>
